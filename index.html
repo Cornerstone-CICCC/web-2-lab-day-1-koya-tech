@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City/Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <!-- YOUR CODE HERE -->
-  
-  <script src="./app.js"></script>
+  <div class="container">
+    <h1>City/Weather Search</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Enter city name">
+      <button type="submit">Search</button>
+    </form>
+    <div id="search-results"></div>
+
+    <div class='header'>
+      <div class='current_weather_image'>
+        <!-- <img src="" alt=""> -->
+      </div>
+      <div class='header_text'>
+        <div class='content'>
+          <span class='city'></span>
+        </div>
+        <div class='content'>
+          <span class='current_temparture'></span>
+        </div>
+      </div>
+    </div>
+    <div class='main_content'>
+      <table class='table'>
+        <thead>
+        <tbody>
+          <tr>
+            <th scope='row' class='table_terms'>Country</th>
+            <td>
+              <span class='countryName'></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope='row' class='table_terms'>timezone</th>
+            <td>
+              <span class='timezone'></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope='row' class='table_terms'>Population</th>
+            <td>
+              <span class='population'></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope='row' class='table_terms'>tomorrow's Forecast</th>
+            <td>
+              <span class='low_temparture'></span>
+              <span class='high_temparture'></span>
+            </td>
+          </tr>
+        </tbody>
+        </thead>
+      </table>
+    </div>
+    <script src="./app.js"></script>
 </body>
+
 </html>
